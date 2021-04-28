@@ -1,0 +1,36 @@
+.attribution {
+	 font-size: 11px; text-align: center;
+ }
+ 
+ .attribution a {
+ 	 color: hsl(228, 45%, 44%);
+ }
+
+html{
+	height: 100%;
+}
+
+body {
+	font-size: 1.2rem;
+	min-height: 100%;
+	background: #EAF2E3
+}
+
+.grid-conteiner> * {
+	box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+
+nav {
+	background-color: #FFABAB
+}
+
+section {
+	background-color: #C5A3FF
+}
+
+aside {
+	background-color: #85E3FF
+}
