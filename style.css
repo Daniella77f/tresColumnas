@@ -12,25 +12,97 @@ html{
 
 body {
 	font-size: 1.2rem;
-	min-height: 100%;
-	background: #EAF2E3
+	background-color: hsl(0, 0%, 95%);
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 15px;
 }
 
-.grid-conteiner> * {
-	box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
+.sedan{
+     background-color: hsl(31,77%,52%);
+     border-radius: 10px 0px 0px 10px;
 }
 
-nav {
-	background-color: #FFABAB
+.sedan button{
+	color: hsl(31,77%,52%);
+	 border-color: hsl(31,77%,52%);
 }
 
-section {
-	background-color: #C5A3FF
+.suv{
+	background-color: hsl(184,100%,22%);
 }
 
-aside {
-	background-color: #85E3FF
+.suv button{
+	color:hsl(184,100%,22%);
+	border-color:hsl(184,100%,22%);
 }
+
+.luxury{
+	background-color: hsl(179, 100%,13%);
+	border-radius: 0px 10px 10px 0px;
+}
+
+.luxury button{
+	color: hsl(179, 100%,13%);
+	border-color: hsl(179, 100%,13%);	
+}
+.grid-cars {
+	display: grid;
+	grid-template-columns: repeat(3,20%);
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+}
+
+article {
+	padding: 2rem;
+}
+
+p{
+	font-family: "Lexend";
+	font-size: 0.75rem;
+	font-weight: 400;
+	margin-bottom: 4rem;
+
+}
+h1 {
+	font-family: "Big Shoulders display";
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+
+button {
+	background-color: hsl(0, 0%, 95%);
+	border:solid;
+	border-color: inherit;
+	color: inherit;
+	border-radius: 50px;
+	padding: 0.7rem 1rem;
+}
+
+button:hover {
+	background-color: inherit;
+	border:solid;
+	border-color: hsl(0, 0%, 95%);
+	border-radius: 50px; 
+	color:hsla(0, 0%, 100%, 0.75);	
+	cursor:pointer;
+}
+
+@media(max-width: 375px){
+	.grid-cars {
+		grid-template-columns: 95%;
+		grid-template-columns: auto, auto, auto;
+		height: auto;
+		margin-top: 5rem;
+
+}
+	.sedan{    
+     border-radius: 10px 10px 0px 0px;
+}
+
+	.luxury{
+	 border-radius: 0px 0px 10px 10px;
+	}
+	
